@@ -50,9 +50,9 @@
     
         // Specify the tweets and location / radius to search
         var tweets = [
-            'spain',             // First term
-            'greece',             // Second term
-            '45,-10,1500mi'     // search location and radius (lat,lon,radius)
+            'you',             // First term
+            'me',             // Second term
+            '38,95,1500mi'     // search location and radius (lat,lon,radius)
         ];
 
         // Make a new map in the #map element
@@ -60,8 +60,8 @@
             // Specify the MapBox API url
             api: 'http://a.tiles.mapbox.com/v3/mapbox.map-hv50mbs9.jsonp',
             center: {
-                lat: 45,        // Intial center point and zoom level.
-                lon: -10,       // To find coordinates and zoom levels, 
+                lat: 38,        // Intial center point and zoom level.
+                lon: 95,       // To find coordinates and zoom levels, 
                 zoom: 4         // try: http://www.getlatlon.com
             },
             zoomRange: [2, 15], // Limit zooming on the map to these levels
