@@ -262,7 +262,7 @@ a.zoomer {
 .mmg .time {
     right: 10px;
     }
-.mmg:hover .overlay, .mmg:hover .arrow-down {
+.mmg .overlay, .mmg .arrow-down {
     visibility: visible;
     opacity: 1;
     }
