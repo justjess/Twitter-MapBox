@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Twitter Showdown</title>
+    <title>Obama´s Twitter Inauguration</title>
     <link rel="stylesheet" href="http://api.tiles.mapbox.com/mapbox.js/v0.6.3/mapbox.css" type="text/css" />
     <link rel="stylesheet" href="fonts/fonts.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -18,7 +18,7 @@
 <body>
 
 	<div id="header">
-        <h1>love & hate</h1>
+        <h1>Obama´s Inaguration on Twitter</h1>
     </div>
     <div id="content">
         <table id="counter">
@@ -33,9 +33,9 @@
         </table>
         <a href="#" id="stop">Pause</a>
         <div id="about">
-            <h2>Love vs Hate</h2>
-            <p>Follow two competing live Twitter feeds, one including tweets with the keyword 'love', and one with tweets that include the keyword 'hate'. Find out which parts of the country are loving hardest and which ones are having the most hate. </p>
-            <p>Repo <a href="http://github.com/brunosan/Twitter-MapBox">here</a>.</p>
+            <h2>Follow the Inagurations Tweets</h2>
+            <p>This maps shows live Tweets from around the Inaguration site with the word "Obama </p>
+              <p>Forked from <a href="http://github.com/brunosan/Twitter-MapBox">this Mapbox repo</a>.</p>
         	
         </div>
     </div>
@@ -48,16 +48,16 @@
     
         // Specify the tweets and location / radius to search
         var tweets = [
-            'love',             // First term
-            'hate',             // Second term
-            '38,-95,1500mi'     // search location and radius (lat,lon,radius)
+            '',             // First term
+            'Obama',             // Second term
+            '38.89,-77,5mi'     // search location and radius (lat,lon,radius)
         ];
 
         mapbox.auto('map', 'herwig.map-v0r9hagu', function(map, tiledata) {
             map.centerzoom({
-                lat: 40,
-                lon: -80
-            }, 4);
+                lat: 38.89,
+                lon: -77.02
+            }, 15);
 
             map.setZoomRange(2, 15);
             tweetRace.start(map);
