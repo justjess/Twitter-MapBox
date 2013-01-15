@@ -285,9 +285,9 @@ a.zoomer {
     z-index: 1;
     }
 .mmg-first .arrow-down { background: rgba(217,126,81,1); }
-.mmg-first .overlay { background: #d97e51; }
+.mmg-first .overlay { background: rgba(78, 207, 60,0.7) }
 .mmg-second .arrow-down { background: rgba(93,191,225,1); }
-.mmg-second .overlay { background: #5dbfe1; }
+.mmg-second .overlay { background: rgba(78, 207, 60,0.7); }
 
 /* embed */
 
