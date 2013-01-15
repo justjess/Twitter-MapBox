@@ -7,7 +7,6 @@ tweetRace.tweets = [];
 // Start the race with settings from tweets[]
 tweetRace.start = _.throttle(function(map){
     if (map) tweetRace._map = map;
-    $('th.first').text(tweets[0] + ' tweets');
     $('th.second').text(tweets[1] + ' tweets');
     tweetRace.getTweets(tweets[0] + ' OR ' + tweets[1], tweets[2]);
 }, 2000);

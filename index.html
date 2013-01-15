@@ -23,7 +23,7 @@
     <div id="content">
         <table id="counter">
         	<tr>
-        		<th class='first'>First Tweets</th>
+        		<th class='first'>All Tweets</th>
         		<th class='second'>Second Tweets</th>
         	</tr>
            	<tr>
@@ -48,9 +48,9 @@
     
         // Specify the tweets and location / radius to search
         var tweets = [
-            '',             // First term
+            ' ',             // First term
             'Obama',             // Second term
-            '38.89,-77,5mi'     // search location and radius (lat,lon,radius)
+                '38.89,-77,5000mi'     // search location and radius (lat,lon,radius)
         ];
 
         mapbox.auto('map', 'herwig.map-v0r9hagu', function(map, tiledata) {
@@ -59,7 +59,9 @@
                 lon: -77.02
             }, 15);
 
-            map.setZoomRange(2, 15);
+            map.setZoomRange(4, 17);
+
+
             tweetRace.start(map);
 
             // Add share control
