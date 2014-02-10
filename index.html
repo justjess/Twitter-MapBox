@@ -2,14 +2,14 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Obama´s Twitter Inauguration</title>
-    <link rel="stylesheet" href="http://api.tiles.mapbox.com/mapbox.js/v0.6.3/mapbox.css" type="text/css" />
+    <title>Laracon Tweet map</title>
+    <link href="https://api.tiles.mapbox.com/mapbox.js/v1.6.0/mapbox.css" rel="stylesheet">
     <link rel="stylesheet" href="fonts/fonts.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="css/mapbox.share.css" type="text/css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 
-    <script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.3/mapbox.uncompressed.js'></script>
+    <script src="https://api.tiles.mapbox.com/mapbox.js/v1.6.0/mapbox.js"></script>
     <script src="ext/jquery.min.js"></script>
     <script src="ext/underscore.min.js"></script>
     <script src="ext/mapbox.share.js"></script>
@@ -18,7 +18,7 @@
 <body>
 
 	<div id="header">
-        <h1>Obama´s Inaguration on Twitter</h1>
+        <h1>Laracon on Twitter</h1>
     </div>
     <div id="content">
         <table id="counter">
@@ -49,14 +49,14 @@
         // Specify the tweets and location / radius to search
         var tweets = [
             'a',             // First term
-            'Obama',             // Second term
-            '38.89,-77,100mi'     // search location and radius (lat,lon,radius)
+            'Laracon',             // Second term
+            '40.72,-74.00,500mi'     // search location and radius (lat,lon,radius)
         ];
 
         mapbox.auto('map', 'herwig.map-v0r9hagu', function(map, tiledata) {
             map.centerzoom({
-                lat: 38.89,
-                lon: -77.02
+                lat: 40.72,
+                lon: -74.00
             }, 15);
 
             map.setZoomRange(4, 17);
