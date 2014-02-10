@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 
     <script src="https://api.tiles.mapbox.com/mapbox.js/v1.6.0/mapbox.js"></script>
-    <script src="ext/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="ext/underscore.min.js"></script>
     <script src="ext/mapbox.share.js"></script>
     <script src="tweetRace.js"></script>
@@ -53,19 +53,14 @@
             '40.72,-74.00,500mi'     // search location and radius (lat,lon,radius)
         ];
 
-        mapbox.auto('map', 'herwig.map-v0r9hagu', function(map, tiledata) {
-            map.centerzoom({
-                lat: 40.72,
-                lon: -74.00
-            }, 15);
-
-            map.setZoomRange(4, 17);
-
+        var map = L.mapbox.map('map', 'herwig.map-v0r9hagu')
+        	.setView([40.723373519047336, -74.002], 10);
+        	
             tweetRace.start(map);
 
             // Add share control
-            mapbox.share().map(map).add();
-        });
+            //mapbox.share().map(map).add();
+        
         
     </script>
 </body>
